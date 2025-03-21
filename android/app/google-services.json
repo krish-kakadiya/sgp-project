@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "908971145881",
+    "project_id": "food-kart-215fb",
+    "storage_bucket": "food-kart-215fb.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:908971145881:android:03f3d534ad707d6af59608",
+        "android_client_info": {
+          "package_name": "com.example.sgp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "908971145881-91hk0s0q3nastangj65kc4grcol3kb4h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sgp",
+            "certificate_hash": "d12818ec7502e7ea73180d7a1972f6088afc8bb4"
+          }
+        },
+        {
+          "client_id": "908971145881-r9ftgabm2b6dg428o5ftui3bcquj3hck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDARbSHqtsZ-QkiT7tepYsPxOCWpUszCAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "908971145881-r9ftgabm2b6dg428o5ftui3bcquj3hck.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "908971145881-tmkjc0js2jilqephj1o9os5qtkmimlbn.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.sgp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
