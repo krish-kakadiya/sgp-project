@@ -6,6 +6,7 @@ import 'package:sgp/common/widget/appbar/appbar.dart';
 import 'package:sgp/common/widget/texts/section_heading.dart';
 import 'package:sgp/utils/constants/sizes.dart';
 
+import '../../../../features/shop/screens/login/login.dart';
 import '../../../widget/custom_shapes/containers/primary_header_container.dart';
 import '../../../widget/tile/setting_menu_tile.dart';
 import '../../../widget/tile/user_profile_tile.dart';
@@ -52,13 +53,13 @@ class SettingsScreen extends StatelessWidget {
                   SizedBox(height: TSizes.spaceBtwItems),
                   SettingMenuTile(icon: Iconsax.document_upload, title: 'Load Data', subtitle: 'Upload Datato your Cloud Firbase'),
                   SettingMenuTile(icon: Iconsax.location, title: 'Geolocation', subtitle: 'Set recommendation based on location',trailing: Switch(value: true, onChanged: (value) {})),
-                  SettingMenuTile(icon: Iconsax.security_user, title: 'Safe Mode', subtitle: 'Search result is safe for all ages',trailing: Switch(value: false, onChanged: (value) {})),
+                  SettingMenuTile(icon: Iconsax.security_user, title: 'Veg Mode', subtitle: 'If you are vegiterian then select it.',trailing: Switch(value: false, onChanged: (value) {})),
                   SettingMenuTile(icon: Iconsax.image, title: 'HD Image Quality', subtitle: 'Set image quality to be seen',trailing: Switch(value: false, onChanged: (value) {})),
 
                   const SizedBox(height: TSizes.spaceBtwSections),
                   SizedBox(
                     width: double.infinity,
-                    child: OutlinedButton(onPressed: () {}, child: const Text('Logout')),
+                    child: OutlinedButton(onPressed: () => Get.to(() => const LoginScreen()), child: const Text('Logout')),
                   ),
                   const SizedBox(height: TSizes.spaceBtwSections * 2.5),
 

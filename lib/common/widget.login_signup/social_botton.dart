@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 
+import '../../navigation.dart';
 import '../../utils/constants/image_strings.dart';
 import '../../utils/constants/sizes.dart';
 import 'package:sgp/features/shop/screens/home/home.dart'; // ✅ Adjust path to HomeScreen
@@ -39,7 +40,7 @@ class SocialButton extends StatelessWidget {
       // ✅ Navigate to home.dart after successful login
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(builder: (context) => const HomeScreen()),
+        MaterialPageRoute(builder: (context) => const Navigation()),
       );
     } catch (e) {
       print("Google Sign-In Failed: $e");
@@ -62,20 +63,6 @@ class SocialButton extends StatelessWidget {
             ),
           ),
         ),
-        const SizedBox(width: TSizes.spaceBtwItems),
-        Container(
-          decoration: BoxDecoration(border: Border.all(color: Colors.grey), borderRadius: BorderRadius.circular(100)),
-          child: IconButton(
-            onPressed: () {
-              print("Facebook Sign-In Clicked");
-            },
-            icon: const Image(
-              width: TSizes.iconMd,
-              height: TSizes.iconMd,
-              image: AssetImage(TImages.facebookLogo),
-            ),
-          ),
-        )
       ],
     );
   }

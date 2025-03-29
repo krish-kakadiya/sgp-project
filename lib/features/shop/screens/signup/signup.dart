@@ -5,6 +5,7 @@ import 'package:iconsax_flutter/iconsax_flutter.dart';
 import 'package:sgp/utils/constants/text_string.dart';
 import '../../../../common/widget.login_signup/form_divider.dart';
 import '../../../../common/widget.login_signup/social_botton.dart';
+import '../../../../navigation.dart';
 import '../../../../utils/constants/sizes.dart';
 import '../home/home.dart'; // Import home screen
 
@@ -32,7 +33,7 @@ class _SignupScreenState extends State<SignupScreen> {
       );
 
       // Navigate to home screen after successful signup
-      Get.offAll(() => const HomeScreen());
+      Get.offAll(() => const Navigation());
 
       Get.snackbar("Success", "Account created successfully!",
           snackPosition: SnackPosition.BOTTOM);
